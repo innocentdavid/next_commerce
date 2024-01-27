@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import useOnClickOutside from 'use-onclickoutside';
 import Logo from '../../assets/icons/logo';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { RootState } from 'store';
 
 type HeaderType = {
@@ -11,7 +11,7 @@ type HeaderType = {
 }
 
 const Header = ({ isErrorPage }: HeaderType) => {
-  const router = useRouter();
+  // const router = useRouter();
   const pathname = usePathname();
   const { cartItems } = useSelector((state: RootState)  => state.cart);
   const arrayPaths = ['/'];  
