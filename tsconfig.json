@@ -63,5 +63,5 @@
   "include": [
     "pages",
     ".next/types/**/*.ts"
-, "app/product", "app/products/page.tsx", "app/register/page.tsx", "app/login/page.tsx", "app/404/page.tsx", "app/cart/page.tsx", "app/forgot-password/forgot-password.tsx"  ]
+, "app/product", "app/products/page.tsx", "app/register/page.tsx", "app/login/page.tsx", "app/404/page.tsx", "app/cart/page.tsx", "app/forgot-password/page.tsx"  ]
 }
