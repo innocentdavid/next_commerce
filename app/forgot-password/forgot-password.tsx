@@ -1,4 +1,4 @@
-import Layout from '../../layouts/Main';
+// import Layout from '../../layouts/Main';
 import Link from 'next/link';
 import { useForm } from "react-hook-form";
 import { server } from '../../utils/server'; 
@@ -20,7 +20,7 @@ const ForgotPassword = () => {
   };
 
   return (
-    <Layout>
+    // <Layout>
       <section className="form-page">
         <div className="container">
           <div className="back-button-section">
@@ -74,7 +74,7 @@ const ForgotPassword = () => {
 
         </div>
       </section>
-    </Layout>
+    // </Layout>
   )
 }
   
