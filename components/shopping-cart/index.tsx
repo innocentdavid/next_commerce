@@ -1,3 +1,4 @@
+"use client";
 import { useSelector } from 'react-redux';
 import CheckoutStatus from '../../components/checkout-status';
 import Item from './item';

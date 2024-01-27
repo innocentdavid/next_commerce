@@ -1,13 +1,13 @@
-import Layout from '../layouts/Main';
+
 import Link from 'next/link';
 
 const RegisterPage = () => (
-  <Layout>
+  <>
     <section className="form-page">
       <div className="container">
         <div className="back-button-section">
           <Link href="/products">
-            <a><i className="icon-left"></i> Back to store</a>
+            <p><i className="icon-left"></i> Back to store</p>
           </Link>
         </div>
 
@@ -47,7 +47,7 @@ const RegisterPage = () => (
 
             <p className="form__signup-link">
               <Link href="/login">
-                <a href="#">Are you already a member?</a>
+                <Link href="#">Are you already a member?</Link>
               </Link>
             </p>
           </form>
@@ -55,7 +55,7 @@ const RegisterPage = () => (
 
       </div>
     </section>
-  </Layout>
+  </>
 )
   
 export default RegisterPage

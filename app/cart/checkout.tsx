@@ -1,8 +1,10 @@
-import Layout from '../../layouts/Main';
+"use client";
 import { useSelector } from 'react-redux';
 import CheckoutStatus from '../../components/checkout-status';
 import CheckoutItems from '../../components/checkout/items';
-import { RootState } from 'store';
+import { RootState } from '../../store';
+import Link from 'next/link';
+import React from 'react';
 
 const CheckoutPage = () => {
 
@@ -17,7 +19,7 @@ const CheckoutPage = () => {
   })
 
   return (
-    <Layout>
+    <>
       <section className="cart">
         <div className="container">
           <div className="cart__intro">
@@ -145,7 +147,7 @@ const CheckoutPage = () => {
           </div>
           
           <div className="cart-actions cart-actions--checkout">
-            <a href="/cart" className="cart__btn-back"><i className="icon-left"></i> Back</a>
+            <Link href="/cart" className="cart__btn-back"><i className="icon-left"></i> Back</Link>
             <div className="cart-actions__items-wrapper">
               <button type="button" className="btn btn--rounded btn--border">Continue shopping</button>
               <button type="button" className="btn btn--rounded btn--yellow">Proceed to payment</button>
@@ -153,7 +155,7 @@ const CheckoutPage = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   )
 };
 

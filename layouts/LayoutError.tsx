@@ -1,15 +1,17 @@
+"use client";
 import Head from 'next/head';
-import Header from 'components/header';
-import { useRouter } from 'next/router';
-
+import Header from '../components/header';
+import { usePathname } from 'next/navigation';
+import React from 'react';
 type LayoutType = {
   title?: string;
   children?: React.ReactNode;
 }
 
 export default ({ children, title = 'Next.js Ecommerce' }: LayoutType) => {
-  const router = useRouter();
-  const pathname = router.pathname;
+
+  // const pathname = router.pathname;
+  const pathname = usePathname();
 
   return (
     <div className="app-main">

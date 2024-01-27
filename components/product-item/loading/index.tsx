@@ -1,5 +1,7 @@
+import Link from "next/link";
+
 const ProductItemLoading = () => (
-  <a href="#" className="product-item product-item--loading">
+  <Link href="#" className="product-item product-item--loading">
     <div className="product__image">
 
     </div>
@@ -10,7 +12,7 @@ const ProductItemLoading = () => (
         <h4></h4>
       </div>
     </div>
-  </a>
+  </Link>
 );
 
 

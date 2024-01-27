@@ -1,3 +1,4 @@
+'use client'
 import { useState } from 'react';
 import Checkbox from './form-builder/checkbox';
 import CheckboxColor from './form-builder/checkbox-color';

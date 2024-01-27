@@ -1,9 +1,9 @@
-import Layout from '../layouts/Main';
+'use client';
 import Link from 'next/link';
 import { useForm } from 'react-hook-form';
-import { server } from '../utils/server';
-import { postData } from '../utils/services';
-
+import { server } from '../../utils/server';
+import { postData } from '../../utils/services';
+ 
 type LoginMail = {
 	email: string;
 	password: string;
@@ -22,14 +22,12 @@ const LoginPage = () => {
 	};
 
 	return (
-		<Layout>
+		<>
 			<section className="form-page">
 				<div className="container">
 					<div className="back-button-section">
 						<Link href="/products">
-							<a>
-								<i className="icon-left"></i> Back to store
-							</a>
+							<i className="icon-left"></i> Back to store
 						</Link>
 					</div>
 
@@ -121,7 +119,7 @@ const LoginPage = () => {
 					</div>
 				</div>
 			</section>
-		</Layout>
+		</>
 	);
 };
 
